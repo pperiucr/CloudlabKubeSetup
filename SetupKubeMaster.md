@@ -42,3 +42,14 @@ sudo kubeadm init --control-plane-endpoint=master-node --upload-certs
 
 ### Step 7: The above command ouputs kubeadm join text which you have to run in worker node 
 
+### Step 8: Create cluster directory, configuration file and its ownership
+```bash
+mkdir -p $HOME/.kube &&
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config &&
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+### Step 9: Deploy pod NW to cluster by using Flannel manager
+```bash
+kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml &&
+kubectl taint nodes --all node-role.kubernetes.io/control-plane- &&
+```
