@@ -1,4 +1,4 @@
-## Setting up master node hosts file
+## Setting up hostnames in hosts file for each node
 
 ### Step 1:Assign unique hostname for master node 
 ```bash
