@@ -10,6 +10,6 @@ cd /mydata/CloudlabKubeSetup/
 
 ### Download and install docker
 ```bash
-chmod +x ./dockersetup.sh
+sudo chmod +x ./dockersetup.sh
 source ./dockersetup.sh
 ```
