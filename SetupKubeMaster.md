@@ -4,7 +4,7 @@
 #### Run this only on master node 
 ```bash
 cd /mydata/CloudlabKubeSetup
-chmod +x ./kubemaster.sh
+sudo chmod +x ./kubemaster.sh
 source ./kubemaster.sh
 ```
 ## One can run the the following steps manually as alternate approach to complete execution of steps step by step
