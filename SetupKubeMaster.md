@@ -6,7 +6,7 @@
 chmod +x ./kubemaster.sh
 source ./kubemaster.sh
 ```
-## One can run the the following steps manually 
+## One can run the the following steps manually as alternate approach to complete execution of steps step by step
 ### Step 1: Edit kubelet file and add following line
 ```bash
 sudo nano /etc/default/kubelet
