@@ -1,6 +1,8 @@
 # Installing Kubernetes
 ## You can run the script that installs Kubernetes or follow each step in next section
-### Download and install docker
+### Give execute credentials to kubeinstall.sh script
+#### Run this on master node as well as in all worker nodes
+#### This downloads latest Kubenetes, installs and configures on each node
 ```bash
 chmod +x ./kubeinstall.sh
 source ./kubeinstall.sh
