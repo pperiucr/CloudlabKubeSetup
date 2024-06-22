@@ -5,7 +5,7 @@
 #### Run this only on master node 
 ```bash
 cd /mydata/CloudlabKubeSetup
-chmod +x ./kubeworker.sh
+sudo chmod +x ./kubeworker.sh
 source ./kubeworker.sh
 ```
 ## One can run the the following steps manually as alternate approach to complete execution of steps step by step in each worker node
