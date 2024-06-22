@@ -9,7 +9,7 @@ sudo hostnamectl set-hostname master-node
 ```bash
 echo -e "10.10.1.1 master-node\n10.10.1.2 worker01\n10.10.1.3 worker02" | sudo tee -a /etc/hosts > /dev/null
 ```
-### Step 8: Restart the terminal application
+### Step 3: Restart the terminal application
 
 ## Setting up each worker node hosts file
 ### Step 1:Assign unique hostname for each worker node 
@@ -21,4 +21,4 @@ sudo hostnamectl set-hostname worker01
 ```bash
 echo -e "10.10.1.1 master-node\n10.10.1.2 worker01\n10.10.1.3 worker02" | sudo tee -a /etc/hosts > /dev/null
 ```
-### Step 8: Restart the terminal application
+### Step 3: Restart the terminal application
