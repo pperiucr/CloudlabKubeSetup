@@ -3,6 +3,7 @@
 ### Give execute credentials to kubemaster.sh script
 #### Run this only on master node 
 ```bash
+cd /mydata/CloudlabKubeSetup
 chmod +x ./kubemaster.sh
 source ./kubemaster.sh
 ```
