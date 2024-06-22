@@ -5,6 +5,7 @@ sudo chown -R $(id -u):$(id -g) /mydata
 cd /mydata
 export MYMOUNT=/mydata
 sudo git clone https://github.com/pperiucr/CloudlabKubeSetup.git
+cd /mydata/CloudlabKubeSetup/
 ```
 
 ### Download and install docker
