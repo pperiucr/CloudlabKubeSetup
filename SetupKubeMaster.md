@@ -1,4 +1,12 @@
 # Setting Kubernetes Master Node
+## One can run the script that sets up Master node using kubemaster.sh
+### Give execute credentials to kubemaster.sh script
+#### Run this only on master node 
+```bash
+chmod +x ./kubemaster.sh
+source ./kubemaster.sh
+```
+## One can run the the following steps manually 
 ### Step 1: Edit kubelet file and add following line
 ```bash
 sudo nano /etc/default/kubelet
@@ -35,7 +43,7 @@ sudo systemctl daemon-reload && sudo systemctl restart docker
 ```bash
 sudo systemctl daemon-reload && sudo systemctl restart kubelet
 ```
-### Step 6: Initialize the Kubernetes cluster
+### Step 6: Initialize the Kubernetes cluster (Make sure master-node name you given as hostname
 ```bash
 sudo kubeadm init --control-plane-endpoint=master-node --upload-certs
 ```
