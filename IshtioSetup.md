@@ -17,7 +17,7 @@ sudo snap install notes
 ```
 ## Step 3 - Install jq
 ```bash
-snap install jq
+sudo snap install jq
 ```
 ## Step 4 - Install ishtio
 ```bash
