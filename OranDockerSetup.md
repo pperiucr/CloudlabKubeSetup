@@ -49,3 +49,7 @@ sudo vi /mydata/application_configuration.json
         ]
     }
 }
+## Step 3: Start the container with the following command
+```bash
+sudo docker run --rm -v /mydata/application_configuration.json:/opt/app/policy-agent/data/application_configuration.json -p 8081:8081 -p 8433:8433 --network=nonrtric-docker-net --name=policy-agent-container nexus3.o-ran-sc.org:10002/o-ran-sc/nonrtric-plt-a1policymanagementservice:2.7.0
+```
